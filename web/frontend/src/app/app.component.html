@@ -1,0 +1,12 @@
+<h1>Page served from the client</h1>
+<button class='btn btn-primary' (click)=getAllProducts()>
+    Click to get all Products
+</button>
+
+<h1>All Products</h1>
+  <ul>
+    <li *ngFor="let product of products">
+       {{product.title}}: {{product.price | currency}}
+    </li>
+</ul>
+  Got error: {{error}}
